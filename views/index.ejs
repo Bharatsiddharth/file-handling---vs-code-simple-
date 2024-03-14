@@ -16,6 +16,18 @@
         <input type="text" placeholder="Enter file type with extension" name="filename">
       </form>
 
+      <ul>
+
+      
+
+          <% files.forEach(function(file,idx){ %>
+            <li> <a href=""><%= file %></a> </li>
+          <% }) %>
+
+       
+
+      </ul>
+
     </div>
     <div class="right-path"></div>
   </div>

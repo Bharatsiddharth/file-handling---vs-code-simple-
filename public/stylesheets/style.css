@@ -12,13 +12,13 @@ html,body{
 .container{
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 255, 255, 0.306);
+  background-color: gray;
 }
 
 .left-path{
   height: 100%;
   width: 30%;
-  background-color: aquamarine;
+  background-color: rgba(127, 255, 212, 0.413);
   padding: 3vw;
 }
 
