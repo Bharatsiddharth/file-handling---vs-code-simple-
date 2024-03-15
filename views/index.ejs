@@ -17,19 +17,19 @@
       </form>
 
       <ul>
-
-      
-
           <% files.forEach(function(file,idx){ %>
-            <li> <a href=""><%= file %></a> </li>
+            <li> <a href="/<% files %>"><%= file %></a> </li>
           <% }) %>
-
-       
-
       </ul>
 
     </div>
-    <div class="right-path"></div>
+    <div class="right-path">
+      <form action="">
+        <textarea name="" id="" cols="70" rows="20">
+          <%= filedata  %>
+        </textarea>
+      </form>
+    </div>
   </div>
 
 
