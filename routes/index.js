@@ -9,7 +9,7 @@ var globalpath = path.join(__dirname, "../", "public", "uploads")
 /* GET home page. */
 router.get('/', function(req, res, next) {
   const files = fs.readdirSync(globalpath);
-  res.render('index', {files:files, filedata: ''});
+  res.render('index', {files:files, filedata: ""});
 });
 
 router.get('/:filename', function(req, res, next) {
@@ -25,7 +25,15 @@ router.post('/createfile', function(req, res, next) {
   fs.writeFileSync(path.join(globalpath, filename), "");
   // res.send("file created")
 
-  res.redirect(`${filename}`)
+  res.redirect(`/${filename}`)
+});
+
+
+router.get('/delete/:filename', function(req, res, next) {
+
+  fs.unlinkSync(path.join(globalpath, req.params.filename));
+  res.redirect("/")
+  
 });
 
 module.exports = router;

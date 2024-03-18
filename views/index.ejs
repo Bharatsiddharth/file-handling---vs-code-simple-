@@ -18,7 +18,10 @@
 
       <ul>
           <% files.forEach(function(file,idx){ %>
-            <li> <a href="/<% files %>"><%= file %></a> </li>
+            <li> <a href='<%= file %>'><%= file %></a> 
+              <a href='delete/<%= file %>'>delete</a>
+            </li>
+            
           <% }) %>
       </ul>
 
