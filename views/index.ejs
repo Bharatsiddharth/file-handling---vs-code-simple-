@@ -27,11 +27,14 @@
 
     </div>
     <div class="right-path">
-      <form action="">
-        <textarea name="" id="" cols="70" rows="20">
-          <%= filedata  %>
-        </textarea>
-      </form>
+      <form action="/update/<%= filename %>" method="post">
+        <textarea name="filedata" cols="100" rows="20"><%= filedata%></textarea>
+        <br>
+        <button>Save</button>
+    </form>
+
+      
+
     </div>
   </div>
 
