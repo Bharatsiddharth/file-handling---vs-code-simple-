@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+  }
+  
+  .left-path{
+    height: 100%;
+    width: 30%;
+    background-color: rgba(82, 82, 82, 0.413);
+    padding: 3vw;
+  }
+  
+  .left-path input{
+    padding: 1vw;
+    width: 80%;
+  }
+  
+  .left-path ul li{
+    width: 80%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    
+  }
+  
+  .right-path{
+    height: 100vh;
+    width: 70%;
+    background-color: darkgray;
+    /* position: relative; */
+  }
+  
+  .right-path nav{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* margin-left: 2%; */
+    padding-left: 2vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644);
+  }
+  
+  
+  
+  .right-path textarea{
+    height: 91vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .right-path .btn2{
+    font-size: 1.2vw;
+    padding: 0.8vw 1.5vw;
+    font-family: monospace;
+    position: absolute;
+    font-weight: bold;
+    top: 10%;
+    left: 90%;
+  }

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
   
@@ -19,20 +23,29 @@
       <ul>
           <% files.forEach(function(file,idx){ %>
             <li> <a href='<%= file %>'><%= file %></a> 
-              <a href='delete/<%= file %>'>delete</a>
+              <a href='delete/<%= file %>'><i class="ri-close-circle-line"></i></a>
             </li>
             
           <% }) %>
       </ul>
 
     </div>
+
+    
+
     <div class="right-path">
+      <nav>
+        <h2><%= filename %></h2> 
+      </nav>
+
+
       <form action="/update/<%= filename %>" method="post">
-        <textarea name="filedata" cols="100" rows="20"><%= filedata%></textarea>
+        <textarea name="filedata" ><%= filedata%></textarea>
         <br>
-        <button>Save</button>
+        <button class="btn2">Save</button>
     </form>
 
+    
       
 
     </div>
